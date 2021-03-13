@@ -7,7 +7,7 @@ module.exports = function check(str, bracketsConfig) {
     }
 
   }
-   if (buffer.length != 0 ){
+  if (buffer.length != 0 ){
      return false;
    }
     
@@ -24,12 +24,12 @@ function searchInBracketsConfig(symbol, bracketsConfig, buffer){
 
     }
 
-    if (breaketsConfig[i][0] == symbol) {
+    if (bracketsConfig[i][0] == symbol) {
       buffer.push(symbol);
       break;
     }
 
-    if (breaketsConfig[i][1] == symbol && buffer [buffer.length - 1] != bracketsConfig[i][0]){
+    if (bracketsConfig[i][1] == symbol && buffer [buffer.length - 1] != bracketsConfig[i][0]){
       return false;
     }
   }
